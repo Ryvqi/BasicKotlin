@@ -27,3 +27,26 @@ fun ContohList(){
     println(shapesLocked)
 }
 
+fun ContohSet(){
+    println("=== Set ===")
+    //Set Read Only
+    val readOnlyAbjad = setOf("A", "B", "C")
+    println(readOnlyAbjad)
+
+    //Set Mutable
+    val shape: MutableSet<String> = mutableSetOf("Circle", "Square", "Triangle")
+    println(shape)
+
+    //add data set mutable
+    shape.add("Rectangle")
+    println(shape)
+
+    //hapus data set mutable
+    shape.remove("Circle")
+    println(shape)
+
+    //set read only
+    val shapesLocked: Set<String> = shape
+    println(shapesLocked)
+}
+
