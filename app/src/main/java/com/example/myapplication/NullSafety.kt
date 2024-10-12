@@ -32,6 +32,7 @@ fun strLength(notNull: String): Int {
 println(strLength(neverNull)) // 18
 
 }
+
 fun main() {
     nullSafety()
 }
